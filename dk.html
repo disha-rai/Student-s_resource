@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Departmental Resources</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"> 
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: Baskerville;
+      background-image: url("pexels-martinpechy-2078271.jpg");
+          background-repeat: no-repeat, repeat;
+          background-position: center; /* Center the image */
+          background-size: cover; /* Resize the background image to cover the entire container */
+          padding-top: 10px; 
+    }
+
+    .navbar {
+      background-color: #e7acc8;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+    }
+    .jumbotron {
+     
+      color: rgb(23, 18, 18);
+      padding: 2rem;
+      text-align: center;
+    }
+
+    
+
+
+    .card-header {
+      background-color: #5c7ccc;
+      color: rgb(253, 246, 248);
+    }
+
+    footer {
+      margin-top: 20px;
+      padding: 20px;
+      text-align: center;
+      background-color: #e7acc8;
+      color: rgb(252, 250, 250);
+    }
+
+    .content-section {
+      display: none;
+    }
+
+    .content-section.active {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Departmental Resources</a>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron">
+    <h1 class="display-4"> Departmental Resources</h1>
+   
+    
+    <!-- Interactive Buttons -->
+    <div class="btn-group" role="group" aria-label="Resource Type">
+      <button type="button" class=".my-button" onclick="showContent('notes')">Notes</button>
+      <button type="button" class=".my-button" onclick="showContent('syllabus')">Syllabus</button>
+      <button type="button" class=".my-button" onclick="showContent('questions')">Past Year Questions</button>
+    </div>
+  </div>
+
+  <!-- Content Sections -->
+  <div class="container">
+    <!-- Notes Section -->
+    <div id="notes" class="content-section active">
+      <h1>Notes</h1>
+      <div class="row">
+        <!-- Department Cards -->
+        <div class="col-lg-4 col-md-6 mb-4">
+          
+          <div class="card">
+            <div class="card-header fade-in">BCA Notes</div>
+            <div class="card-body fade-in">
+                <ul class="list-group list-group-flush">
+                  
+                  <li class="list-group-item fade-in"><a href="semester1-bca-notes.html"> <img src="baby.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                      Semester 1</a></li>
+                  
+                  <li class="list-group-item"><a href="semester2-bca-notes.html"><img src="girl (1).png" alt="Semester 2 Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                      Semester 2</a></li>
+                  
+                  <li class="list-group-item fade-in">
+                    <a href="semester3-bca-notes.html">
+                      <img src="student.png" alt="Semester 3 Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                      Semester 3
+                    </a>
+                  </li>
+                  
+                  <li class="list-group-item fade-in">
+                    <a href="semester4-bca-notes.html">
+                      <img src="girl.png" alt="Semester 4 Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                      Semester 4
+                    </a>
+                  </li>
+            
+                  <li class="list-group-item fade-in">
+                    <a href="#semester5-bca-notes">
+                      <img src="student (2).png" alt="Semester 5 Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                      Semester 5
+                    </a>
+                  </li>
+                  
+                  <li class="list-group-item fade-in">
+                    <a href="#semester6-bca-notes">
+                      <img src="graduated.png" alt="Semester 6 Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                      Semester 6
+                    </a>
+                  </li>
+            
+                </ul>
+            </div>
+          </div>
+        </div>
+            
+        <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">BCOM Notes</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="semester1-BCOM-notes.html"> <img src="baby.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                    Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-BCOM-notes"><img src="girl (1).png" alt="Semester 2 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-BCOM-notes"> <img src="student.png" alt="Semester 3 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-BCOM-notes"><img src="girl.png" alt="Semester 4 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-BCOM-notes"><img src="student (2).png" alt="Semester 5 Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                    Semester 5</a></li>
+                  <li class="list-group-item"><a href="#semester6-BCOM-notes"> <img src="graduated.png" alt="Semester 6 Icon" style="width: 20px; height: 20px; margin-right: 10px;">
+                    Semester 6 </a></li>
+                </ul>
+              </div>
+            </div>
+          </div> <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">HISTORY Notes</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-HISTORY-notes"> <img src="baby.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-HISTORY-notes"> <img src="girl (1).png" alt="Semester 2 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-HISTORY-notes"> <img src="student.png" alt="Semester 3 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-HISTORY-notes"> <img src="girl.png" alt="Semester 4 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-HISTORY-notes"> <img src="student (2).png" alt="Semester 5 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester6-HISTORY-notes"> <img src="graduated.png" alt="Semester 6 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">POLITICAL SCI Notes</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-PS-notes"> <img src="baby.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-PS-notes"> <img src="girl (1).png" alt="Semester 2 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-PS-notes"> <img src="student.png" alt="Semester 3 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-PS-notes"> <img src="girl.png" alt="Semester 4 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-PS-notes"> <img src="student (2).png" alt="Semester 5 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester6-PS-notes"> <img src="graduated.png" alt="Semester 6 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">GEOGRAPHY Notes</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-GEO-notes"> <img src="baby.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-GEO-notes"> <img src="girl (1).png" alt="Semester 2 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-GEO-notes"> <img src="student.png" alt="Semester 3 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-GEO-notes"> <img src="girl.png" alt="Semester 4 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-GEO-notes"> <img src="student (2).png" alt="Semester 5 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester6-GEO-notes"> <img src="graduated.png" alt="Semester 6 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">ENGLISH Notes</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-E-notes"> <img src="graduated.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-E-notes"> <img src="graduated.png" alt="Semester 2 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-E-notes"> <img src="graduated.png" alt="Semester 3 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-E-notes"> <img src="graduated.png" alt="Semester 4 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-E-notes"> <img src="graduated.png" alt="Semester 5 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester6-E-notes"> <img src="graduated.png" alt="Semester 6 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">NEPALI Notes</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-N-notes">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-N-notes">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-N-notes">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-N-notes">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-N-notes">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester6-N-notes">Semester 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">SOCIOLOGY Notes</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-S-notes">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-S-notes">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-S-notes">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-S-notes">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-S-notes">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester6-S-notes">Semester 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">EDUCATION Notes</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-ED-notes">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-ED-notes">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-ED-notes">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-ED-notes">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-ED-notes">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester6-ED-notes">Semester 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </div> 
+  <div class="container">
+    <!-- Syllabus Section -->
+    <div id="syllabus" class="content-section ">
+        <h1>Syllabus</h1>
+        <div class="row">
+          <!-- Department Cards -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">BCA Syllabus</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-bca-syllabus"><img src="baby.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-bca-syllabus"><img src="girl (1).png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-bca-syllabus"><img src="student.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-bca-syllabus"><img src="girl.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-bca-syllabus"><img src="student (2).png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 5</a></li>
+                  <li class="list-group-item"><a href="#semester6-bca-syllabus"><img src="graduated.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 6</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> 
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">BCOM Syllabus</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-bcom-syllabus"><img src="baby.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-bcom-syllabus"><img src="girl (1).png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-bcom-syllabus"><img src="student.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-bcom-syllabus"><img src="girl.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-bcom-syllabus"><img src="student (2).png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 5</a></li>
+                  <li class="list-group-item"><a href="#semester6-bcom-syllabus"><img src="graduated.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 6</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">History Syllabus</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-history-syllabus"><img src="baby.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-history-syllabus"><img src="girl (1).png" alt=Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-history-syllabus"><img src="student.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-history-syllabus"><img src="girl.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-history-syllabus"><img src="student (2).png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 5</a></li>
+                  <li class="list-group-item"><a href="#semester6-history-syllabus"><img src="graduated.png" alt="Semester 1 Icon" style="width: 20px; height: 20px; margin-right: 10px;">Semester 6</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>  
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">Political Science Syllabus</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-political-science-syllabus">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-political-science-syllabus">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-political-science-syllabus">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-political-science-syllabus">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-political-science-syllabus">Semester 5</a></li>
+                  <li class="list-group-item"><a href="#semester6-political-science-syllabus">Semester 6</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">Geography Syllabus</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-geography-syllabus">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-geography-syllabus">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-geography-syllabus">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-geography-syllabus">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-geography-syllabus">Semester 5</a></li>
+                  <li class="list-group-item"><a href="#semester6-geography-syllabus">Semester 6</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">Geography Syllabus</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-geography-syllabus">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-geography-syllabus">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-geography-syllabus">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-geography-syllabus">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-geography-syllabus">Semester 5</a></li>
+                  <li class="list-group-item"><a href="#semester6-geography-syllabus">Semester 6</a></li>
+                </ul>
+              </div>
+            </div>
+          </div> <div class="col-lg-4 col-md-6 mb-4"> 
+            <div class="card">
+              <div class="card-header">Geography Syllabus</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-geography-syllabus">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-geography-syllabus">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-geography-syllabus">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-geography-syllabus">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-geography-syllabus">Semester 5</a></li>
+                  <li class="list-group-item"><a href="#semester6-geography-syllabus">Semester 6</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4"> 
+            <div class="card">
+              <div class="card-header">Geography Syllabus</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-geography-syllabus">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-geography-syllabus">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-geography-syllabus">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-geography-syllabus">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-geography-syllabus">Semester 5</a></li>
+                  <li class="list-group-item"><a href="#semester6-geography-syllabus">Semester 6</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>     
+           <div class="col-lg-4 col-md-6 mb-4"> 
+            <div class="card">
+              <div class="card-header">Geography Syllabus</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-geography-syllabus">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-geography-syllabus">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-geography-syllabus">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-geography-syllabus">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-geography-syllabus">Semester 5</a></li>
+                  <li class="list-group-item"><a href="#semester6-geography-syllabus">Semester 6</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>
+    </div>   
+    <div class="container">
+      <!-- Past Year Questions Section -->
+      <div id="questions" class="content-section">
+        <h1>Past Year Question Papers</h1>
+       
+        <div class="row">
+          <!-- Department Cards -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">BCA Past Year Questions</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-bca-questions">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-bca-questions">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-bca-questions">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-bca-questions">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-bca-questions">Semester 5</a></li>
+                  <li class="list-group-item"><a href="#semester6-bca-questions">Semester 6</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">BCA Past Year Questions</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-bca-questions">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-bca-questions">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-bca-questions">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-bca-questions">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-bca-questions">Semester 5</a></li>
+                  <li class="list-group-item"><a href="#semester6-bca-questions">Semester 6</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">BCA Past Year Questions</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-bca-questions">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-bca-questions">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-bca-questions">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-bca-questions">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-bca-questions">Semester 5</a></li>
+                  <li class="list-group-item"><a href="#semester6-bca-questions">Semester 6</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="card-header">BCA Past Year Questions</div>
+              <div class="card-body">
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#semester1-bca-questions">Semester 1</a></li>
+                  <li class="list-group-item"><a href="#semester2-bca-questions">Semester 2</a></li>
+                  <li class="list-group-item"><a href="#semester3-bca-questions">Semester 3</a></li>
+                  <li class="list-group-item"><a href="#semester4-bca-questions">Semester 4</a></li>
+                  <li class="list-group-item"><a href="#semester5-bca-questions">Semester 5</a></li>
+                  <li class="list-group-item"><a href="#semester6-bca-questions">Semester 6</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+             <div class="card-header">BCA Past Year Questions</div>
+             <div class="card-body">
+               <ul class="list-group list-group-flush">
+                <li class="list-group-item"><a href="#semester1-bca-questions">Semester 1</a></li>
+                <li class="list-group-item"><a href="#semester2-bca-questions">Semester 2</a></li>
+                <li class="list-group-item"><a href="#semester3-bca-questions">Semester 3</a></li>
+                <li class="list-group-item"><a href="#semester4-bca-questions">Semester 4</a></li>
+                <li class="list-group-item"><a href="#semester5-bca-questions">Semester 5</a></li>
+                <li class="list-group-item"><a href="#semester6-bca-questions">Semester 6</a></li>
+               </ul>
+             </div>
+            </div>
+          </div>
+         <div class="col-lg-4 col-md-6 mb-4">
+           <div class="card">
+              <div class="card-header">BCA Past Year Questions</div>
+             <div class="card-body">
+               <ul class="list-group list-group-flush">
+                 <li class="list-group-item"><a href="#semester1-bca-questions">Semester 1</a></li>
+                 <li class="list-group-item"><a href="#semester2-bca-questions">Semester 2</a></li>
+                 <li class="list-group-item"><a href="#semester3-bca-questions">Semester 3</a></li>
+                 <li class="list-group-item"><a href="#semester4-bca-questions">Semester 4</a></li>
+                 <li class="list-group-item"><a href="#semester5-bca-questions">Semester 5</a></li>
+                 <li class="list-group-item"><a href="#semester6-bca-questions">Semester 6</a></li>
+               </ul>
+             </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                 <div class="card-header">BCA Past Year Questions</div>
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a href="#semester1-bca-questions">Semester 1</a></li>
+                      <li class="list-group-item"><a href="#semester2-bca-questions">Semester 2</a></li>
+                      <li class="list-group-item"><a href="#semester3-bca-questions">Semester 3</a></li>
+                      <li class="list-group-item"><a href="#semester4-bca-questions">Semester 4</a></li>
+                      <li class="list-group-item"><a href="#semester5-bca-questions">Semester 5</a></li>
+                      <li class="list-group-item"><a href="#semester6-bca-questions">Semester 6</a></li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                 <div class="card-header">BCA Past Year Questions</div>
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a href="#semester1-bca-questions">Semester 1</a></li>
+                      <li class="list-group-item"><a href="#semester2-bca-questions">Semester 2</a></li>
+                      <li class="list-group-item"><a href="#semester3-bca-questions">Semester 3</a></li>
+                      <li class="list-group-item"><a href="#semester4-bca-questions">Semester 4</a></li>
+                      <li class="list-group-item"><a href="#semester5-bca-questions">Semester 5</a></li>
+                      <li class="list-group-item"><a href="#semester6-bca-questions">Semester 6</a></li>
+                    </ul>
+                  </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4">
+              <div class="card">
+                  <div class="card-header">BCA Past Year Questions</div>
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                          <li class="list-group-item"><a href="#semester1-bca-questions">Semester 1</a></li>
+                          <li class="list-group-item"><a href="#semester2-bca-questions">Semester 2</a></li>
+                          <li class="list-group-item"><a href="#semester3-bca-questions">Semester 3</a></li>
+                          <li class="list-group-item"><a href="#semester4-bca-questions">Semester 4</a></li>
+                          <li class="list-group-item"><a href="#semester5-bca-questions">Semester 5</a></li>
+                          <li class="list-group-item"><a href="#semester6-bca-questions">Semester 6</a></li>
+                     </ul>
+                  </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>  
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Departmental Resources. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- JavaScript to Toggle Content Sections -->
+  <script>
+    function showContent(contentType) {
+      // Hide all content sections
+      document.querySelectorAll('.content-section').forEach(section => {
+        section.classList.remove('active');
+      });
+
+      // Show the selected content section
+      document.getElementById(contentType).classList.add('active');
+    }
+  </script>
+</body>
+
+</html>

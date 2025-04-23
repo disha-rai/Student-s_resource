@@ -1,0 +1,38 @@
+.my-button {
+    background-color: rgb(1, 1, 19); /* Changes the button's background color */
+    color: white;           /* Changes the button's text color */
+    border: none;           /* Removes any border */
+    padding: 10px 20px;     /* Adds some padding */
+    font-size: 16px;        /* Sets the font size */
+    cursor: pointer;        /* Changes cursor to pointer on hover */
+}
+
+.my-button:hover {
+    background-color: darkblue; /* Changes color when the button is hovered over */
+}
+.cta {
+    background-color: #e74c3c;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta:hover {
+    background-color: #c0392b;
+  }
+  .fade-in {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  @keyframes fadeIn {
+    100% {
+      opacity: 1;
+    }
+  }
+  body {
+    background: linear-gradient(to right, #3498db, #2ecc71);
+  }
+    
